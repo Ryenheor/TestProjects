@@ -24,8 +24,8 @@ window.onscroll = function() {
   //Пользователь долистал до подвала
   //пододвигаю меню вверх, если элементов в меню достаточно много
   if(menuElem.clientHeight>=clientHeight && (scrollHeight-footerElem.clientHeight-menuElem.clientHeight<=scrollTop)){
-    // сколько отодвинуть от низа = ( общего скролла высота - текущее наскролленое) - сколько не влезло от меню
-    var footerHeightВifference = (scrollHeight-footerElem.clientHeight)-(scrollTop+clientHeight)-(menuElem.clientHeight-clientHeight);
+    // сколько отодвинуть от низа =  общего скролла высота - текущее наскролленое - сколько не влезло от меню
+    var footerHeightВifference = scrollHeight-footerElem.clientHeight-scrollTop-menuElem.clientHeight;
     menuElem.style.top = footerHeightВifference+'px';
   }
   else {
