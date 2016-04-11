@@ -32,8 +32,8 @@ body {
 .menu {
   width:30%;
   float:right;
-  padding:20px;
-  margin : 5px;
+  padding:10px;
+  margin:10px;
   line-height: 1.5;
   
   transition: background-color 0.8s 0.1s ease;
@@ -44,14 +44,14 @@ body {
 }
 
 .body-content{
-  width:70%;
-  padding:0 5px;
+  width:65%;
+  padding:0 15px;
 }
 
 .text-content{
   word-wrap: break-word;
-  white-space: pre;
   line-height: 1.5;
+  margin:10px;
 }
 
 .fixed {
